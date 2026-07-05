@@ -8,7 +8,7 @@ The project currently includes a complete authentication system using JWT and HT
 
 Detailed backend API documentation, including endpoints, authentication, and security, is available in:
 
-- [`backend/API.md`](backend/API.md)
+- [`backend/API.md`](Backend/API.md)
 ---
 
 ## 🚀 Tech Stack
