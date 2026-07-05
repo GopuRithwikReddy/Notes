@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import useAuth from "../hooks/useAuth"
+import useAuth from "../../hooks/useAuth"
 import { Navigate, useNavigate } from "react-router-dom"
-import api from '../api/axios'
+import api from '../../api/axios'
 
 const Register = () => {
   const { user, setUser } = useAuth()
