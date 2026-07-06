@@ -1,14 +1,19 @@
-# Notes
+# 📝 Notes
 
 A full-stack Notes application built using the MERN stack.
 
-The project currently includes a complete authentication system using JWT and HTTP-only cookies.
+Users can securely register, log in, and manage their personal notes. Authentication is implemented using JWT stored in HTTP-only cookies for improved security.
+
+> 🚧 This project is currently under active development.
+
+---
 
 ## 📚 Documentation
 
 Detailed backend API documentation, including endpoints, authentication, and security, is available in:
 
 - [`backend/API.md`](Backend/API.md)
+
 ---
 
 ## 🚀 Tech Stack
@@ -41,9 +46,19 @@ Detailed backend API documentation, including endpoints, authentication, and sec
 - ✅ User Registration
 - ✅ User Login
 - ✅ Persistent Authentication
+- ✅ JWT Authentication using HTTP-only Cookies
 - ✅ Protected Routes
 - ✅ Logout
-- ✅ JWT Authentication using HTTP-only Cookies
+- ✅ Responsive Authentication UI
+- ✅ Password Visibility Toggle
+
+### Notes
+
+- 🚧 Dashboard (In Progress)
+- ⏳ Create Notes
+- ⏳ Edit Notes
+- ⏳ Delete Notes
+- ⏳ Search Notes
 
 ---
 
@@ -73,12 +88,13 @@ Notes/
 
 ```bash
 git clone https://github.com/GopuRithwikReddy/Notes.git
+cd Notes
 ```
 
 ### Backend
 
 ```bash
-cd Notes/backend
+cd backend
 npm install
 npm run dev
 ```
@@ -88,10 +104,12 @@ npm run dev
 Open another terminal.
 
 ```bash
-cd Notes/frontend
+cd frontend
 npm install
 npm run dev
 ```
+
+> Start the backend first, then the frontend.
 
 ---
 
@@ -105,7 +123,7 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
 NODE_ENV=development
-# Change to "production" when deploying the application.
+# Change to "production" when deploying.
 ```
 
 ### Frontend
@@ -118,7 +136,7 @@ The frontend currently uses the API URL configured in:
 src/api/axios.js
 ```
 
-If you deploy the application later, you can move the API URL into a frontend `.env` file.
+For production, you can move the API URL into a `.env` file.
 
 Example:
 
@@ -126,13 +144,27 @@ Example:
 VITE_API_URL=https://your-backend-url.com/api
 ```
 
-and update `src/api/axios.js` accordingly.
-
 ---
 
 ## 📌 Current Status
 
-✅ Authentication system completed.
+- ✅ Authentication System
+- ✅ Protected Routes
+- 🚧 Dashboard UI
+- ⏳ Notes CRUD
+- ⏳ Search & Filtering
+
+---
+
+## 📸 Screenshots
+
+Screenshots will be added once the dashboard and notes features are completed.
+
+---
+
+## 🌍 Live Demo
+
+Coming soon.
 
 ---
 

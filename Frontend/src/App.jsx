@@ -7,7 +7,6 @@ import ProtectedRoute from './components/ProtectedRoute'
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-black text-white">
         <Routes>
           <Route path="/" element={
             <ProtectedRoute>
@@ -17,7 +16,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-      </div>
     </>
   )
 }
