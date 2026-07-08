@@ -1,22 +1,53 @@
 # 📝 Notes
 
-A full-stack Notes application built using the MERN stack.
+A modern full-stack Notes application built with the **MERN Stack**.
 
-Users can securely register, log in, and manage their personal notes. Authentication is implemented using JWT stored in HTTP-only cookies for improved security.
+The application allows users to securely register, log in, and manage their personal notes. Authentication is implemented using **JWT stored in HTTP-only cookies** for improved security.
 
-> 🚧 This project is currently under active development.
+---
+
+## 🚀 Features
+
+### 🔐 Authentication
+
+- ✅ User Registration
+- ✅ User Login
+- ✅ Persistent Authentication
+- ✅ JWT Authentication using HTTP-only Cookies
+- ✅ Protected Routes
+- ✅ Logout
+- ✅ User Profile
+
+### 📝 Notes
+
+- ✅ Create Notes
+- ✅ View Notes
+- ✅ Edit Notes
+- ✅ Delete Notes
+- ✅ Delete Confirmation
+- ✅ Search Notes
+- ✅ Responsive Dashboard
+- ✅ Empty State UI
+
+### 🎨 User Interface
+
+- ✅ Responsive Design
+- ✅ Mobile Friendly
+- ✅ Loading States
+- ✅ Modern Dark Theme
+- ✅ Clean & Minimal UI
 
 ---
 
 ## 📚 Documentation
 
-Detailed backend API documentation, including endpoints, authentication, and security, is available in:
+Backend API documentation is available here:
 
 - [`backend/API.md`](Backend/API.md)
 
 ---
 
-## 🚀 Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
 
@@ -39,40 +70,17 @@ Detailed backend API documentation, including endpoints, authentication, and sec
 
 ---
 
-## ✨ Features
-
-### Authentication
-
-- ✅ User Registration
-- ✅ User Login
-- ✅ Persistent Authentication
-- ✅ JWT Authentication using HTTP-only Cookies
-- ✅ Protected Routes
-- ✅ Logout
-- ✅ Responsive Authentication UI
-- ✅ Password Visibility Toggle
-
-### Notes
-
-- 🚧 Dashboard (In Progress)
-- ⏳ Create Notes
-- ⏳ Edit Notes
-- ⏳ Delete Notes
-- ⏳ Search Notes
-
----
-
-## 📁 Folder Structure
+## 📂 Project Structure
 
 ```text
 Notes/
 │
-├── backend/
+├── Backend/
 │   ├── src/
 │   ├── package.json
 │   └── ...
 │
-├── frontend/
+├── Frontend/
 │   ├── src/
 │   ├── package.json
 │   └── ...
@@ -84,7 +92,7 @@ Notes/
 
 ## ⚙️ Installation
 
-### Clone the repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/GopuRithwikReddy/Notes.git
@@ -94,7 +102,7 @@ cd Notes
 ### Backend
 
 ```bash
-cd backend
+cd Backend
 npm install
 npm run dev
 ```
@@ -104,7 +112,7 @@ npm run dev
 Open another terminal.
 
 ```bash
-cd frontend
+cd Frontend
 npm install
 npm run dev
 ```
@@ -115,7 +123,7 @@ npm run dev
 
 ## 🌐 Environment Variables
 
-### Backend (`backend/.env`)
+### Backend (`Backend/.env`)
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -123,22 +131,17 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
 NODE_ENV=development
-# Change to "production" when deploying.
 ```
 
 ### Frontend
 
-No environment variables are required for local development.
-
-The frontend currently uses the API URL configured in:
+Update the API URL inside:
 
 ```text
 src/api/axios.js
 ```
 
-For production, you can move the API URL into a `.env` file.
-
-Example:
+For production, you can use:
 
 ```env
 VITE_API_URL=https://your-backend-url.com/api
@@ -146,27 +149,34 @@ VITE_API_URL=https://your-backend-url.com/api
 
 ---
 
-## 📌 Current Status
+## 📌 Highlights
 
-- ✅ Authentication System
-- ✅ Protected Routes
-- 🚧 Dashboard UI
-- ⏳ Notes CRUD
-- ⏳ Search & Filtering
-
----
-
-## 📸 Screenshots
-
-Screenshots will be added once the dashboard and notes features are completed.
+- 🔐 Secure JWT Authentication
+- 🍪 HTTP-only Cookie Authentication
+- 📝 Complete Notes CRUD
+- 🔍 Real-time Search
+- 👤 User Profile
+- 📱 Fully Responsive
+- ⚡ Fast React + Vite Frontend
+- 🌙 Modern Dark UI
 
 ---
 
 ## 🌍 Live Demo
 
-Coming soon.
+Coming Soon
 
 ---
+
+## 📖 What I Learned
+
+- Building a complete MERN application
+- JWT Authentication with HTTP-only cookies
+- Protected Routes
+- REST API development with Express
+- MongoDB & Mongoose
+- Responsive UI with Tailwind CSS
+- State management using React Hooks
 
 ## 📜 License
 

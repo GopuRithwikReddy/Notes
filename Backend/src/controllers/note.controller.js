@@ -28,7 +28,7 @@ export const createNote = asyncHandler(async (req, res) => {
 export const getNotes = asyncHandler(async (req, res) => {
     const notes = await noteModel.find({
         user: req.user._id
-    })
+    }).sort({ createdAt: -1 });
     return res.status(200).json({
         success: true,
         message: "Fetched notes",

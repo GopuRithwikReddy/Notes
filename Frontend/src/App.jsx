@@ -3,19 +3,40 @@ import Dashboard from "./pages/Dashboard"
 import Login from "./pages/auth/Login"
 import Register from "./pages/auth/Register"
 import ProtectedRoute from './components/ProtectedRoute'
+import Profile from './pages/Profile'
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
-        <Routes>
-          <Route path="/" element={
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: "#18181b",
+            color: "#fff",
+            border: "1px solid #3f3f46",
+          },
+        }}
+      />
+      <Routes>
+        <Route path="/" element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route
+          path="/profile"
+          element={
             <ProtectedRoute>
-              <Dashboard />
+              <Profile />
             </ProtectedRoute>
-          } />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
+          }
+        />
+      </Routes>
     </>
   )
 }

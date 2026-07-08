@@ -3,6 +3,7 @@ import useAuth from "../../hooks/useAuth"
 import { Navigate, useNavigate, Link } from "react-router-dom"
 import api from '../../api/axios'
 import AuthLayout from '../../components/auth/AuthLayout'
+import toast from "react-hot-toast";
 
 
 const Login = () => {
@@ -33,6 +34,7 @@ const Login = () => {
       setError("")
       setUser(res.data.data)
       navigate("/")
+      toast.success("Welcome back!");
     } catch (error) {
       setError(error.response?.data?.message ?? "Something went wrong")
     } finally {
