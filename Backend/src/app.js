@@ -13,7 +13,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "https://your-vercel-app.vercel.app",
+            "https://notes-sigma-mocha.vercel.app",
         ],
         credentials: true,
     })
