@@ -4,6 +4,9 @@ A modern full-stack Notes application built with the **MERN Stack**.
 
 The application allows users to securely register, log in, and manage their personal notes. Authentication is implemented using **JWT stored in HTTP-only cookies** for improved security.
 
+
+🌐 **Live Demo:** https://notes-sigma-mocha.vercel.app
+
 ---
 
 ## 🚀 Features
@@ -160,13 +163,6 @@ VITE_API_URL=https://your-backend-url.com/api
 - ⚡ Fast React + Vite Frontend
 - 🌙 Modern Dark UI
 
----
-
-## 🌍 Live Demo
-
-Coming Soon
-
----
 
 ## 📖 What I Learned
 
